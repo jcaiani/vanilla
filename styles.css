@@ -1,0 +1,145 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Overpass', Arial, sans-serif;
+    background: -webkit-linear-gradient(#ededed, #bbb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ededed, #bbb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ededed, #bbb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top, #ededed, #bbb) fixed; /* Standard syntax */
+    border:0;
+}
+/* The Modal */
+.modal {
+    position: relative;
+    margin: auto;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+}
+
+/* Modal Inner Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    border: .5px solid white;
+    max-width: 475px;
+    max-height: 350px;
+    min-width: 190px;
+    min-height: 200px;
+    -moz-box-shadow: 0 3px 3px #bbb;
+    -webkit-box-shadow: 0 3px 3px #bbb;
+    box-shadow: 0 3px 3px #bbb;
+}
+
+/* Header */
+.header-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    min-height: 40px;
+    background: #c00; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#c00, #470000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#c00, #470000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#c00, #470000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#c00, #470000); /* Standard syntax */
+}
+
+/* Small screens */
+@media all and (max-width: 800px) {
+    .header-container {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+}
+
+/* Modal Title */
+.modal-title {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: white;
+    flex-grow: 1;
+}
+
+.header-container a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 13px;
+    color: rgba(255, 255, 255, 0.8);
+    justify-content: space-around;
+    border-left-style: solid;
+    border-left-width: .5px;
+}
+.header-container a:hover,
+.header-container a.selected {
+    background-color:rgba(0, 0, 0, 0.15);
+    color: white;
+    background-clip:border-box;
+}
+
+/* Modal content div */
+.panel-content {
+    padding: 15px;
+    background-color: white;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.panelHeader {
+    margin-top: 0px;
+}
+
+/* Modal body-text div */
+.body-text {
+    font-size: 13.5px;
+    line-height: 20px;
+    margin-top: -5px;
+    font-weight: bold;
+}
+
+.panel-details {
+    padding-top: 5px;
+}
+
+/* Modal detail table */
+.detail-row {
+    display: flex;
+    padding-bottom: 12px;
+}
+
+.label-col {
+    width: 30%;
+    color: black;
+}
+
+.value-col {
+    width: 70%;
+    color: grey;
+}
+
+.badge {
+    width: 65px;
+    height: 23px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
